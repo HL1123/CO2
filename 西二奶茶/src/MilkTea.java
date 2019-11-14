@@ -1,14 +1,14 @@
 public class MilkTea {
     protected String name;
-    protected String ingredient;
+    protected Ingredient ingredient;
 
-    public MilkTea(String n,String st)
+    public MilkTea(String n,Ingredient ingredient1)
     {
         name=n;
-        ingredient=st;
+        ingredient=ingredient1;
     }
 //    @Override
     public String toString() {
-        return "name:"+name+' '+"Ingredient:"+ingredient;
+        return "name:"+name+' '+"Ingredient:"+ingredient.toString();
     }
 }

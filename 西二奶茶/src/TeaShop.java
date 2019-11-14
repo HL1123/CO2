@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class TeaShop implements Shop {
     List<Bubble> bubbleslist = new ArrayList<Bubble>();
@@ -51,7 +48,8 @@ public class TeaShop implements Shop {
                         bubbleslist.remove(i);
                         System.out.println("谢谢您，欢迎您下次光临！");
                     }
-                } else {
+                }
+                else {
                     frist = 1;
                 }
             } else if (ingredient == "Coconut") {
